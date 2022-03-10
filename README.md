@@ -7,7 +7,7 @@ As of now only navbar component is added.
 # How to use?
 ```html
 <header class="container">
-    <nav class="navbar light*">
+    <nav class="navbar light">
         <section class="brand">
             <a href="">
                 <span>Minimalist</span>
@@ -32,7 +32,7 @@ As of now only navbar component is added.
     </nav>
 </header>
 ```
-# *
+# !- Important
 Theme name is necessary for now as no default theme is added. 
 
 # Theme choices [Name]
