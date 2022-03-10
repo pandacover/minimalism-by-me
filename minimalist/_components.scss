@@ -1,0 +1,142 @@
+.container {
+    display: block;
+    width: 100%;
+    height: $base-height;
+
+    &.sm {
+        height: $height-sm;
+    }
+    &.lg {
+        height: $height-lg;
+    }
+    &.xl {
+        height: $height-xl;
+    }
+    &.xxl {
+        height: $height-xxl;
+    }
+}
+
+.flex {
+    display: flex;
+    gap: $gap;
+}
+
+
+.navbar {
+    width: 100%;
+    height: $height-lg;
+    display: flex;
+
+    &.light {
+        background: map-get($light, "base");
+        box-shadow: 0 0 4px 1px map-get($light, "base2");
+        .brand {
+            a {
+                color: #000;
+            }
+        }
+
+        .navbar-nav {
+            .nav-links {
+                color: map-get($light, "color2");
+            }
+            
+            .nav-links:hover {
+                color: map-get($light, "color1");
+            }
+        }
+    }
+
+    &.theme1 {
+        background: map-get($light, "color3");
+        box-shadow: 0 0 4px 1px map-get($light, "color2");
+        .brand {
+            a {
+                color: #fff;
+            }
+        }
+
+        .navbar-nav {
+            .nav-links {
+                color: map-get($light, "base1");
+            }
+            
+            .nav-links:hover {
+                color: map-get($light, "color7");
+            }
+        }
+    }
+
+    &.dark {
+        background: map-get($dark, "base");
+        box-shadow: 0 0 4px 1px map-get($dark, "base2");
+        .brand {
+            a {
+                color: #fff;
+            }
+        }
+
+        .navbar-nav {
+            .nav-links {
+                color: map-get($dark, "color6");
+            }
+            
+            .nav-links:hover {
+                color: map-get($dark, "color2");
+            }
+        }
+    }
+    
+    .brand {
+        flex: 1;
+        font-size: 2rem;
+        display: flex;
+        font-weight: 600;
+        align-items: center;
+        justify-content: flex-end;
+        font-variant: small-caps;
+
+    }
+
+    .elements {
+        flex: 2;
+
+        .navbar-nav {
+            display: flex;
+            gap: 4em;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+
+            .nav-links {
+                font-weight: 600;
+                font-size: $base-font-size;
+                transition: color 150ms ease-in-out 0s;
+            }
+        }
+    }
+
+}
+
+
+// custom width
+.w-100 {
+    width: $base-width;
+}
+
+.w-75 {
+    width: $width-sm;
+}
+
+.w-150 {
+    width: $width-lg;
+}
+
+.w-200 {
+    width: $width-xl;
+}
+
+.w-300 {
+    width: $width-xxl;
+}

@@ -1,0 +1,76 @@
+// @use "scss:math";
+
+// dimensions
+// height
+$base-height: 2.5em;
+$height-sm: $base-height * .75;
+$height-lg: $base-height * 1.5;
+$height-xl: $base-height * 2;
+$height-xxl: $base-height * 3;
+
+// width
+$base-width: 6.2em;
+$width-sm: $base-width * .75;
+$width-lg: $base-width * 1.5;
+$width-xl: $base-width * 2;
+$width-xxl: $base-width * 3;
+
+// font size
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * .75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+
+
+// flex 
+$gap: 1em;
+
+// color palette
+$dark-blue : #4F7F8F;
+$light-blue : #96D5EB;
+$blue : #57A3BD;
+$dark-sand : #DBCEC1;
+$sand : #F7F6F5;
+$blue-1: #6D83F2;
+$blue-2: #6A98F0;
+$blue-3: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+$white: #F8F8F8;
+$black-1: #303030;
+$black-2: #191919;
+$black-3: #383838;
+$gray: #C7D0FF;
+
+//light
+
+$light: (
+    "base1": $white,
+    "base2": $blue-2,
+    "color1": $blue-1,
+    "color2": $blue-2,
+    "color3": $blue-3,
+    "color4": $black-1,
+    "color5": $black-2,
+    "color6": $black-3,
+    "color7": $gray
+);
+
+
+//dark
+$color1: #34495E;
+$color2: #16A085;
+$color3: #6A5BA6;
+$color4: #E67E22;
+$color5: #C0392B;
+
+$dark: (
+    "base": $black-2,
+    "color1": $blue-1,
+    "color2": $blue-2,
+    "color3": $blue-3,
+    "color4": $black-1,
+    "color5": $black-3,
+    "color6": $white,
+    "color7": $gray
+
+);
